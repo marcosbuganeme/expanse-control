@@ -1,60 +1,62 @@
-Claro! Aqui está um exemplo de README elegante para o seu aplicativo de download de mangás em PDF utilizando Node.js, Cheerio e Axios:
 
-```markdown
-# Manga Downloader em PDF
+# Projeto Java com Spring Boot usando Clean Architecture
 
-Bem-vindo ao Manga Downloader em PDF, uma aplicação Node.js projetada para baixar seus mangás favoritos diretamente da web em formato PDF. Utilizando as poderosas bibliotecas Cheerio para scraping de HTML e Axios para requisições HTTP, este aplicativo oferece uma maneira eficiente e amigável de coletar e armazenar mangás.
+Este projeto exemplifica a estrutura de um aplicativo Spring Boot seguindo os princípios da Clean Architecture.
 
-## Recursos
+## Estrutura de Diretórios
 
-- **Download Automático**: Baixe os últimos capítulos dos seus mangás favoritos automaticamente.
-- **Alta Qualidade**: Gera arquivos PDF de alta qualidade para uma leitura confortável e portátil.
-- **Suporte a Múltiplos Sites**: Compatível com vários sites de mangás populares.
-- **Configuração Personalizável**: Configure quais mangás baixar e com que frequência.
+O projeto está organizado da seguinte forma:
 
-## Pré-requisitos
+```
+src/
+├─ main/
+│ ├─ java/
+│ │ ├─ com/
+│ │ │ ├─ seuprojeto/
+│ │ │ │ ├─ application/
+│ │ │ │ │ ├─ config/ - Configurações de beans do Spring e outras configurações
+│ │ │ │ │ ├─ controller/ - Controladores REST, recebem requisições e delegam ações
+│ │ │ │ ├─ domain/
+│ │ │ │ │ ├─ model/ - Entidades e objetos de domínio, regras de negócio
+│ │ │ │ │ ├─ service/ - Serviços de domínio, lógica de negócio central
+│ │ │ │ │ ├─ exception/ - Exceções personalizadas de domínio
+│ │ │ │ │ ├─ port/ - Portas (interfaces para serviços externos e adapters)
+│ │ │ │ ├─ infrastructure/
+│ │ │ │ │ ├─ repository/ - Implementações de repositórios (Spring Data JPA)
+│ │ │ │ │ ├─ security/ - Configurações de segurança (autenticação, autorização)
+│ │ │ │ │ ├─ web/ - Configurações web específicas (filtros, interceptadores)
+│ │ │ │ │ ├─ adapter/ - Adapters para conectar com serviços externos (APIs, DBs)
+│ │ │ │ ├─ common/
+│ │ │ │ │ ├─ util/ - Utilitários e helpers comuns ao projeto
+│ │ │ │ │ ├─ constants/ - Constantes globais
+├─ resources/
+│ ├─ application.properties - Configurações do aplicativo Spring
+│ ├─ static/ - Recursos estáticos (css, js, imagens, etc.)
+│ ├─ templates/ - Templates de email ou outras templates
+│ ├─ db/
+│ │ ├─ migration/ - Scripts de migração de banco de dados (Flyway ou Liquibase)
+└─ test/
+├─ java/
+│ ├─ com/
+│ │ ├─ seuprojeto/
+│ │ │ ├─ domain/
+│ │ │ │ ├─ service/ - Testes unitários para serviços de domínio
+│ │ │ ├─ infrastructure/
+│ │ │ │ ├─ repository/ - Testes de integração para repositórios
+│ │ │ ├─ application/
+│ │ │ │ ├─ controller/ - Testes de integração para controladores
+├─ resources/
+├─ application-test.properties - Configurações para testes
+```
 
-Antes de começar a usar o Manga Downloader em PDF, certifique-se de ter o Node.js instalado em sua máquina. Se você não tem o Node.js instalado, você pode baixá-lo e instalá-lo a partir de [Node.js oficial website](https://nodejs.org/).
+## Sobre a Clean Architecture
 
-## Como Instalar
+A Clean Architecture foi proposta por Robert C. Martin e busca separar os aspectos fundamentais do software das flutuações tecnológicas e das interfaces de usuário. Dessa forma, a lógica do negócio e as regras de aplicação podem ser testadas de forma independente do framework ou banco de dados utilizado.
 
-Para instalar este aplicativo, siga estas simples etapas:
+## Configuração e Uso
 
-1. Clone o repositório do projeto:
-   ```bash
-   git clone https://link-para-o-seu-repositorio.com/manga-downloader.git
-   cd manga-downloader
-   ```
-
-2. Instale as dependências necessárias:
-   ```bash
-   npm install
-   ```
-
-## Como Usar
-
-Para começar a baixar mangás, siga as instruções abaixo:
-
-1. Configure suas preferências editando o arquivo de configuração `config.json`.
-2. Execute o aplicativo:
-   ```bash
-   node app.js
-   ```
+Para rodar este projeto, você precisará do JDK 11+ e do Maven para gerenciar as dependências. Configure os detalhes específicos, como conexões de banco de dados, no arquivo `application.properties`.
 
 ## Contribuições
 
-Contribuições são sempre bem-vindas! Se você tem uma sugestão que poderia melhorar este aplicativo, por favor fork o repositório e crie um pull request. Você também pode simplesmente abrir uma issue com a tag "melhoria". Não esqueça de dar uma estrela ao projeto!
-
-## Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-
-## Contato
-
-Seu Nome – [@marcosbuganeme](https://twitter.com/marcosbuganeme) – marcos.after@gmail.com
-
-Link do Projeto: https://github.com/seulink/manga-downloader
-
-```
-
-Este README é uma base sólida para o seu projeto, oferecendo uma descrição clara, instruções de instalação e uso, além de encorajar contribuições da comunidade. Personalize conforme necessário para se adequar aos detalhes e características específicas do seu aplicativo!
+Contribuições são bem-vindas. Para contribuir, por favor crie um fork do repositório, faça suas alterações e envie um pull request.****
