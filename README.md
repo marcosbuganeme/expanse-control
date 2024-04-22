@@ -57,6 +57,8 @@ A Clean Architecture foi proposta por Robert C. Martin e busca separar os aspect
 
 Para rodar este projeto, você precisará do JDK 11+ e do Maven para gerenciar as dependências. Configure os detalhes específicos, como conexões de banco de dados, no arquivo `application.properties`.
 
+As demais informações estão no docker-compose.yml
+
 ## Ideias de implementação
 1. Integração Bancária Automática: Permita que os usuários conectem suas contas bancárias e cartões de crédito para uma importação automática e categorização das despesas. Isso reduz o esforço manual e aumenta a precisão do controle de gastos.
 2. Categorização Inteligente de Despesas: Utilize inteligência artificial para categorizar automaticamente as despesas à medida que elas são importadas, aprendendo com as correções dos usuários para melhorar a precisão ao longo do tempo.
