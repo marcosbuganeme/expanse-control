@@ -12,7 +12,7 @@ src/
 ├─ main/
 │ ├─ java/
 │ │ ├─ com/
-│ │ │ ├─ seuprojeto/
+│ │ │ ├─ control-expanse/
 │ │ │ │ ├─ application/
 │ │ │ │ │ ├─ config/ - Configurações de beans do Spring e outras configurações
 │ │ │ │ │ ├─ controller/ - Controladores REST, recebem requisições e delegam ações
