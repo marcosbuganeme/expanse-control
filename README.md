@@ -65,10 +65,6 @@ Testcontainers has been configured to use the following Docker images:
 Please review the tags of the used images and set them to the same as you're running in production.
 
 
-# Projeto Java com Spring Boot usando Clean Architecture
-
-Este projeto exemplifica a estrutura de um aplicativo Spring Boot seguindo os princípios da Clean Architecture.
-
 ## Estrutura de Diretórios
 
 O projeto está organizado da seguinte forma:
